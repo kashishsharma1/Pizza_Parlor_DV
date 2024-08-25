@@ -44,7 +44,7 @@ models:
     Raw_dbt_staging_Layer:
       description: schema for stage tables with hash keys
       +schema: RAWDV_SCHEMA
-      +materialized: incremental
+      +materialized: view
     Data_Vault_Layer:
       description: schema for core data vault objects i.e Hub, Links, Sats
       +schema: RAWDV_SCHEMA

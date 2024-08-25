@@ -1,7 +1,6 @@
 {{ config( materialized='view') }}
 
 select
-  orderitem_id,
   order_id,
   pizza_id,
   quantity,
