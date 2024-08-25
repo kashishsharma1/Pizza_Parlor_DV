@@ -1,7 +1,6 @@
 {{ config( materialized='view') }}
 
 select
-  pizzaingredient_id,
   pizza_id,
   ingredient_id,
   current_timestamp() as load_date,
