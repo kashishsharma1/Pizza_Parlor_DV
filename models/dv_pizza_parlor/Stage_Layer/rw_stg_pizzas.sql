@@ -3,7 +3,7 @@
 select
   pizza_id,
   pizza_name,
-  size,
+  pizza_size,
   price,
   current_timestamp() as load_date,
   'pizzas_source' as record_source
