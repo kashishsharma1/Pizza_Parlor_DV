@@ -1,22 +1,27 @@
 {{ config(materialized='view') }}
 
 {%- set yaml_metadata -%}
-source_model: "rw_stg_pizzas"
+source_model: "rw_stg_orders"
 derived_columns:
-  RECORD_SOURCE: "!pizzas_source"
+  RECORD_SOURCE: "!orders_source"
   END_DATE: "TO_DATE('9999-12-31')"
 null_columns:
     required:
-    - PIZZA_ID
+    - ORDER_ID
+    - CUSTOMER_ID
 hashed_columns:
-  PIZZA_HK: 
-    - "PIZZA_ID"
-  PIZZA_HASHDIFF:
+  CUSTOMER_HK:
+    - "CUSTOMER_ID"
+  ORDER_HK: 
+    - "ORDER_ID"
+  CUSTOMER_ORDER_HK:
+    - "CUSTOMER_ID"
+    - "ORDER_ID"
+  CUSTOMER_ORDER_HASHDIFF:
     is_hashdiff: true
     columns:
-      - "PIZZA_NAME"
-      - "PIZZA_SIZE"
-      - "PRICE"
+      - "ORDER_DATE"
+      - "TOTAL_AMOUNT"
       - "LOAD_DATE"
       - "RECORD_SOURCE"
 {%- endset -%}
