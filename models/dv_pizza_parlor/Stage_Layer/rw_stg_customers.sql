@@ -9,4 +9,4 @@ select
   address,
   current_timestamp() as load_date,
   'customers_source' as record_source
-from {{ source('dv_pizza_parlor','STG_CUSTOMERS') }};
+from {{ source('dv_pizza_parlor','STG_CUSTOMERS') }}

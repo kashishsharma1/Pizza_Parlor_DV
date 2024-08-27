@@ -21,7 +21,7 @@ hashed_columns:
     is_hashdiff: true
     columns:
       - "QUANTITY"
-      - "ITEM_TOTAL"
+      - "ITEMTOTAL"
       - "LOAD_DATE"
       - "RECORD_SOURCE"
 {%- endset -%}
