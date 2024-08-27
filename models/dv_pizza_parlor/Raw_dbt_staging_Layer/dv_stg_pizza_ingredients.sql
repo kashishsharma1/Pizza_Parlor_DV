@@ -6,7 +6,7 @@ derived_columns:
   RECORD_SOURCE: "!pizzaIngredient_source"
   END_DATE: "TO_DATE('9999-12-31')"
 hashed_columns:
-  PIZZAINGREDIENT_HK:
+  PIZZA_INGREDIENT_HK:
     - "PIZZA_ID"
     - "INGREDIENT_ID"
   PIZZA_HK:
