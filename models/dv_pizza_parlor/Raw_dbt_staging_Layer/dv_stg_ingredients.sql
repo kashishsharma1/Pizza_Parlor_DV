@@ -7,10 +7,10 @@ derived_columns:
   END_DATE: "TO_DATE('9999-12-31')"
 null_columns:
     required:
-    - INGREDIENTS_ID
+    - INGREDIENT_ID
 hashed_columns:
   INGREDIENT_HK: 
-    - "INGREDIENTS_ID"
+    - "INGREDIENT_ID"
   INGREDIENT_HASHDIFF:
     is_hashdiff: true
     columns:
