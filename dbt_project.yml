@@ -49,3 +49,12 @@ models:
       description: schema for core data vault objects i.e Hub, Links, Sats
       +schema: RAWDV_SCHEMA
       +materialized: incremental
+      Hub:
+        +tags:
+          -"hub"
+      Link:
+        +tags:
+          -"link"
+      Sat:
+        +tags:
+          -"sat"

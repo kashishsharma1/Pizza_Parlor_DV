@@ -1,4 +1,4 @@
-{{ config(materialized='incremental') }}
+{{ config(tags="sat",materialized='incremental') }}
 
 {%- set source_model = "dv_stg_pizzas" -%}
 {%- set src_pk = "PIZZA_HK" -%}
