@@ -1,7 +1,7 @@
 {{ config(tags="sat",materialized='incremental') }}
 
 {%- set source_model = "dv_stg_order_pizzas" -%}
-{%- set src_pk = "ORDER_PIZZAS_ID_HK" -%}
+{%- set src_pk = "ORDER_PIZZAS_HK" -%}
 {%- set src_ldts = "LOAD_DATE" -%}
 {%- set src_source = "RECORD_SOURCE" -%}
 {%- set src_hashdiff = "ORDER_PIZZAS_HASHDIFF" -%}
