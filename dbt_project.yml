@@ -50,11 +50,14 @@ models:
       +schema: RAWDV_SCHEMA
       +materialized: incremental
       Hub:
+        materialized: incremental
         +tags:
           -"hub"
       Link:
+        materialized: incremental
         +tags:
           -"link"
       Sat:
+        materialized: incremental
         +tags:
           -"sat"
