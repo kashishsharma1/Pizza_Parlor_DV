@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: customers_hub
+    columns:
+      - name: CUSTOMER_HK
+        tests:
+          - unique
+          - not_null
+  
+  - name: ingredients_hub
+    columns:
+      - name: INGREDIENT_HK
+        tests:
+          - unique
+          - not_null
+
+  - name: orders_hub
+    columns:
+      - name: ORDER_HK
+        tests:
+          - unique
+          - not_null
+
+  - name: pizzas_hub
+    columns:
+      - name: PIZZA_HK
+        tests:
+          - unique
+          - not_null
+
+     
