@@ -4,40 +4,40 @@ models:
   - name: link_customer_order
     columns:
       - name: CUSTOMER_ORDER_HK
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: LOAD_DATE
-        tests:
+        data_tests:
           - not_null
       - name: RECORD_SOURCE
-        tests:
+        data_tests:
           - not_null
               
   - name: link_order_pizzas
     columns:
       - name: ORDER_PIZZAS_HK
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: LOAD_DATE
-        tests:
+        data_tests:
           - not_null
       - name: RECORD_SOURCE
-        tests:
+        data_tests:
           - not_null
 
   - name: link_pizza_ingredients
     columns:
       - name: PIZZA_INGREDIENT_HK
-        tests:
+        data_tests:
           - unique
           - not_null
       - name: LOAD_DATE
-        tests:
+        data_tests:
           - not_null
       - name: RECORD_SOURCE
-        tests:
+        data_tests:
           - not_null
 
      
