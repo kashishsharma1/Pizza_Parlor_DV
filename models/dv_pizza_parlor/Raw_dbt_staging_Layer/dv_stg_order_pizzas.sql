@@ -10,7 +10,7 @@ null_columns:
     - ORDER_ID
     - PIZZA_ID
 hashed_columns:
-  ORDER_PIZZAS_ID_HK:
+  ORDER_PIZZAS_HK:
     - "ORDER_ID"
     - "PIZZA_ID"
   ORDER_HK: 

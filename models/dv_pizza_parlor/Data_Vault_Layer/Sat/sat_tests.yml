@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: sat_CustomerDetails
+    columns:
+      - name: CUSTOMER_HK
+        tests:
+          - not_null
+              
+  - name: sat_IngredientDetails
+    columns:
+      - name: INGREDIENT_HK
+        tests:
+          - not_null
+     
+  - name: sat_OrderDetails
+    columns:
+      - name: ORDER_HK
+        tests:
+          - not_null
+     
+  - name: sat_OrderPizzaDetails
+    columns:
+      - name: ORDER_PIZZAS_HK
+        tests:
+          - not_null
+      
+  - name: sat_PizzaDetails
+    columns:
+      - name: PIZZA_HK
+        tests:
+          - not_null
+      
+     

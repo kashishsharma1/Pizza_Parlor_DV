@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: link_customer_order
+    columns:
+      - name: CUSTOMER_ORDER_HK
+        tests:
+          - unique
+          - not_null
+      - name: LOAD_DATE
+        tests:
+          - not_null
+      - name: RECORD_SOURCE
+        tests:
+          - not_null
+              
+  - name: link_order_pizzas
+    columns:
+      - name: ORDER_PIZZAS_HK
+        tests:
+          - unique
+          - not_null
+      - name: LOAD_DATE
+        tests:
+          - not_null
+      - name: RECORD_SOURCE
+        tests:
+          - not_null
+
+  - name: link_pizza_ingredients
+    columns:
+      - name: PIZZA_INGREDIENT_HK
+        tests:
+          - unique
+          - not_null
+      - name: LOAD_DATE
+        tests:
+          - not_null
+      - name: RECORD_SOURCE
+        tests:
+          - not_null
+
+     
