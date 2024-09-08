@@ -2,6 +2,7 @@ version: 2
 
 models:
   - name: link_customer_order
+    description: Links customer to orders,representing customer's orders
     columns:
       - name: CUSTOMER_ORDER_HK
         data_tests:
@@ -15,6 +16,7 @@ models:
           - not_null
               
   - name: link_order_pizzas
+    description: Links orders to pizzas, representing the items in each order
     columns:
       - name: ORDER_PIZZAS_HK
         data_tests:
@@ -28,6 +30,7 @@ models:
           - not_null
 
   - name: link_pizza_ingredients
+    description: Links pizzas to ingredients, representing the recipe for each pizza
     columns:
       - name: PIZZA_INGREDIENT_HK
         data_tests:
