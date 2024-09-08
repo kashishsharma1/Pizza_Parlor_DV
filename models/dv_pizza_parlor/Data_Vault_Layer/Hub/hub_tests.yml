@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: customers_hub
-    description: Represents unique customers.
+    description: "Represents unique customers."
     columns:
       - name: CUSTOMER_HK
         data_tests:
@@ -10,7 +10,7 @@ models:
           - not_null
   
   - name: ingredients_hub
-    description: Represents unique ingredients used in pizzas.
+    description: "Represents unique ingredients used in pizzas."
     columns:
       - name: INGREDIENT_HK
         data_tests:
@@ -18,7 +18,7 @@ models:
           - not_null
 
   - name: orders_hub
-    description: Represents unique orders placed by customers.
+    description: "Represents unique orders placed by customers."
     columns:
       - name: ORDER_HK
         data_tests:
@@ -26,7 +26,7 @@ models:
           - not_null
 
   - name: pizzas_hub
-    description: Represents unique pizzas available at the parlor.
+    description: "Represents unique pizzas available at the parlor."
     columns:
       - name: PIZZA_HK
         data_tests:
