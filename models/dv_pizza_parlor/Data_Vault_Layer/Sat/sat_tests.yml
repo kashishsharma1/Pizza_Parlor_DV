@@ -2,30 +2,35 @@ version: 2
 
 models:
   - name: sat_CustomerDetails
+    description: Contains descriptive information about customers.
     columns:
       - name: CUSTOMER_HK
         data_tests:
           - not_null
               
   - name: sat_IngredientDetails
+    description: Contains descriptive information about ingredients.
     columns:
       - name: INGREDIENT_HK
         data_tests:
           - not_null
      
   - name: sat_OrderDetails
+    description: Contains descriptive information about orders.
     columns:
       - name: ORDER_HK
         data_tests:
           - not_null
      
   - name: sat_OrderPizzaDetails
+    description: Contains descriptive information about order items.
     columns:
       - name: ORDER_PIZZAS_HK
         data_tests:
           - not_null
       
   - name: sat_PizzaDetails
+    description: Contains descriptive information about pizzas.
     columns:
       - name: PIZZA_HK
         data_tests:
